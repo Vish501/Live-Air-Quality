@@ -19,7 +19,7 @@ def get_logger(log_type: str = "running") -> logging.Logger:
     Returns:
     - logging.Logger: Configured logger instance.
     """ 
-    log_name = f"AQI_{'running' if log_type == 'running' else 'test'}"
+    log_name = f"AQI_{'running' if log_type.lower() == 'running' else 'test'}"
     logger = logging.getLogger(log_name)
     logger.setLevel(logging.INFO)
 
@@ -50,5 +50,8 @@ def get_logger(log_type: str = "running") -> logging.Logger:
 
 
 if __name__ == "__main__":
-    get_logger()
-    
+    logger = get_logger("running")
+    logger.info(f"Initalizing and testing logger")
+
+    logger = get_logger("test")
+    logger.info(f"Initalizing and testing logger")   
