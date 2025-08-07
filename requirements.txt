@@ -1,3 +1,5 @@
+openaq==0.3.0
+
 # === Deep Learning ===
 tensorflow==2.16.1            # Deep learning framework (Keras included)
 
