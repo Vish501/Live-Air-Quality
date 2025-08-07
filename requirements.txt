@@ -1,7 +1,5 @@
-openaq==0.3.0
-
-# === Deep Learning ===
-tensorflow==2.16.1            # Deep learning framework (Keras included)
+# === Air Quality API ===
+openaq==0.3.0                 # Access real-time air quality data
 
 # === Data Science Essentials ===
 numpy==1.26.4                 # Numerical computing
