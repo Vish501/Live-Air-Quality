@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AQI"
+version = "0.0.1"
+authors = [
+    { name="Vish501" }
+]
+description = "AQI Package"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+
+dependencies = [
+  # === Deep Learning ===
+  "tensorflow==2.16.1",             # Deep learning framework
+
+  # === Data Science Essentials ===
+  "numpy==1.26.4",                  # Numerical computing
+  "pandas==2.2.3",                  # Data manipulation
+  "scipy==1.15.3",                  # Scientific computing
+  "matplotlib==3.10.3",             # Plotting
+  "seaborn==0.13.2",                # Statistical plots
+  "tqdm==4.67.1",                   # Progress bars
+
+  # === Dev Tools & Utilities ===
+  "dotenv==0.9.9",                  # Environment variables
+  "dvc==3.60.1",                    # Data version control
+  "joblib==1.5.1",                  # Parallel processing
+  "typeguard==4.4.4",               # Runtime type validation
+  "python-box==6.0.2",              # Dot-access dictionaries
+  "pyYAML==6.0.2",                  # YAML parsing
+  "types-PyYAML==6.0.12.20250516",  # Type stubs for PyYAML
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/Vish501/Live-Air-Quality"
+Issues = "https://github.com/Vish501/Live-Air-Quality/issues"
