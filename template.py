@@ -21,6 +21,7 @@ list_of_files = [
     "params/params.yaml",
     "pyproject.toml",
     "requirements.txt",
+    "research/.gitkeep"
     "notebooks/.gitkeep",
     "app.py"
 ]
