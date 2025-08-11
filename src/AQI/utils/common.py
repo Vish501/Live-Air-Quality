@@ -169,8 +169,8 @@ def save_json(save_path: Path, data: Any) -> None:
         create_directories([save_path.parent])
 
         # Write JSON to file
-        with open(save_path, "w") as file:
-            json.dump(data, file, indent=4)
+        with open(save_path, "w", encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
 
         logger.info(f"JSON file saved at: {save_path}")
 
