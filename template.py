@@ -23,7 +23,10 @@ list_of_files = [
     "requirements.txt",
     "research/.gitkeep"
     "notebooks/.gitkeep",
-    "app.py"
+    "app.py",
+    "src/AQI/sql/ddl/.gitkeep",
+    "src/AQI/sql/dml/raw/.gitkeep",
+    "src/AQI/sql/dml/presentation/.gitkeep",
 ]
 
 # Iterate through each file path
