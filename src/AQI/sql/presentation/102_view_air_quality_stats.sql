@@ -1,3 +1,13 @@
+-- Script: 102_create_daily_stats_view.sql
+-- View: presentation.daily_stats
+-- Purpose: Provides daily aggregated air quality statistics (average values) 
+--          per location and parameter, enriched with temporal context.
+-- Notes:
+--   - Aggregates raw measurements into daily averages by (location_id, parameter).
+--   - Adds derived fields for weekday number, weekday name, and weekend indicator.
+--   - Useful for analyzing day-to-day patterns, weekday vs. weekend trends, and 
+--     feeding time series or forecasting models.
+
 CREATE OR REPLACE VIEW presentation.daily_stats AS (
     WITH dated_data AS (
         SELECT
