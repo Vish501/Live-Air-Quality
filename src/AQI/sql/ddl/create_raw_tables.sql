@@ -11,3 +11,4 @@ CREATE TABLE IF NOT EXISTS raw.air_quality_data (
     "month" VARCHAR,
     "year" BIGINT,
     ingestion_datetime TIMESTAMP
+);
