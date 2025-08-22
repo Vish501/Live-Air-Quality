@@ -12,4 +12,5 @@ SELECT
     "month", 
     "year",
     current_timestamp AS ingestion_datetime
+    '{{ file_name }}' AS file_name
 FROM read_csv('{{ data_file_path }}');
