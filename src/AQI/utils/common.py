@@ -13,6 +13,19 @@ from typing import Any, Union
 
 logger = get_logger()
 
+"""
+### Functions in the Script
+- read_yaml(path: Path) -> ConfigBox
+- create_directories(path_list: list, verbose: bool=True) -> None
+- load_json(path: Path) -> ConfigBox
+- save_bin(save_path: Path, data: Any) -> None
+- load_bin(path: Path) -> Any
+- get_kb_size(path: Path) -> str
+- decode_image_Base64(image_string: str, save_path: Union[str, Path]) -> None
+- encode_image_Base64(path: Union[str, Path]) -> str
+- convert_paths_to_str(obj: dict) -> dict
+"""
+
 
 @ensure_annotations
 def read_yaml(path: Path) -> ConfigBox:
