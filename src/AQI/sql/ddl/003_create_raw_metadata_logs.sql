@@ -8,9 +8,9 @@
 --   - Ensures raw schema remains a faithful reflection of all data received.
 
 CREATE TABLE IF NOT EXISTS raw.file_ingestion_log (
-    file_name TEXT,
+    source_file TEXT,
     ingestion_datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     record_count INT,
-    status TEXT CHECK (status IN ('SUCCESS','FAILED')),
+    "status" TEXT CHECK (status IN ('SUCCESS','FAILED')),
     error_message TEXT
 );
