@@ -27,7 +27,7 @@ This project ingests live environmental data, processes it into daily statistics
 - Add forecasting models for pollution trends (ARIMA, Prophet, LSTMs).
 - Create a CI/CD pipeline for automated updates.
 
-📌 Tech Stack
+# 📌 Tech Stack
 
 - Languages: Python (3.12)
 - Libraries: Pandas, DuckDB, Plotly, Dash
